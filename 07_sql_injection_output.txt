@@ -1,0 +1,39 @@
+========================================================================
+SMART OFFICE SQL INJECTION DEMO (Connected as low-privilege: emp_5)
+========================================================================
+
+[BASELINE] Normal input: 'D-101'
+  Rows returned: 1 -> [('D-101', 'Desk', 'Zone A', 'Gurugram')]
+
+------------------------------------------------------------------------
+DEMO 1: Boolean Bypass Payload -> "' OR '1'='1"
+------------------------------------------------------------------------
+BEFORE (VULNERABLE string concatenation):
+  Executed SQL : SELECT resource_code, resource_type, zone_name, city FROM v_current_availability WHERE resource_code = '' OR '1'='1'
+  Rows leaked  : 47 (ALL available resources exposed!)
+  Sample rows  : [('R-206', 'Room', 'Zone B', 'Gurugram'), ('R-205', 'Room', 'Zone A', 'Gurugram'), ('R-204', 'Room', 'Zone B', 'Gurugram')]
+
+AFTER (FIXED parameterized query):
+  Prepared SQL : SELECT resource_code, resource_type, zone_name, city FROM v_current_availability WHERE resource_code = %s  with param=("' OR '1'='1",)
+  Rows returned: 0 (Attack neutralized: literal match only)
+
+------------------------------------------------------------------------
+DEMO 2: UNION SELECT Leak Payload -> "' UNION SELECT CAST(emp_id AS CHAR), name, role, dept_name FROM v_employee_directory -- "
+------------------------------------------------------------------------
+BEFORE (VULNERABLE string concatenation):
+  Executed SQL : SELECT resource_code, resource_type, zone_name, city FROM v_current_availability WHERE resource_code = '' UNION SELECT CAST(emp_id AS CHAR), name, role, dept_name FROM v_employee_directory -- '
+  Rows leaked  : 40 (Employee directory leaked into resource list!)
+  Sample leaked: [('1', 'Aarav Sharma', 'Admin', 'Engineering'), ('7', 'Siddharth Kapoor', 'Security', 'Engineering'), ('13', 'Priya Reddy', 'Employee', 'Engineering')]
+
+AFTER (FIXED parameterized query):
+  Prepared SQL : SELECT resource_code, resource_type, zone_name, city FROM v_current_availability WHERE resource_code = %s  with param=("' UNION SELECT CAST(emp_id AS CHAR), name, role, dept_name FROM v_employee_directory -- ",)
+  Rows returned: 0 (Attack neutralized)
+
+------------------------------------------------------------------------
+DEMO 3: Stored Procedure (callproc) with Malicious Input
+------------------------------------------------------------------------
+  Step 1 - sp_book_resource returned: booking_id=271, msg='SUCCESS: booking confirmed'
+  Step 2 - sp_cancel_booking called with p_reason="Plans changed'; DROP TABLE booking; -- "
+           Returned: 'SUCCESS: booking cancelled'
+  Step 3 - Verified via v_my_bookings: (271, 'Cancelled') (booking table intact!)
+  Cleanup - Removed temporary test booking_id=271 (database unchanged).
