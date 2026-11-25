@@ -1,0 +1,30 @@
+========================================================================
+SMART OFFICE MONGODB (NoSQL) EXTENSION DEMO
+Database: smart_office_nosql | Collection: workspace_config
+========================================================================
+
+[1. IMPORT] Loaded 50 documents from workspace_config.json
+[2. INDEXES] Created unique index 'idx_resource_code_unique' and multikey 'idx_amenities_multikey'
+
+[3. CRUD OPERATIONS]
+  INSERT: Inserted temporary document resource_code='T-999'
+  FIND (Rooms with capacity >= 20): 3 found -> [{'resource_code': 'R-206', 'location': {'city': 'Gurugram'}, 'room_name': 'Omega', 'capacity': 20}, {'resource_code': 'R-207', 'location': {'city': 'Bengaluru'}, 'room_name': 'Orion', 'capacity': 25}, {'resource_code': 'R-208', 'location': {'city': 'Bengaluru'}, 'room_name': 'Nova', 'capacity': 30}]
+  UPDATE (T-999): {'resource_code': 'T-999', 'status': 'Maintenance', 'amenities': ['4K Display', 'VR Headset', 'Acoustic Panels']}
+  DELETE (T-999 cleanup): deleted_count=1
+
+[4. AGGREGATION PIPELINE 1: Count of Resources by Amenity]
+  Power Outlets             -> 50 resources
+  Docking Station           -> 20 resources
+  Monitor                   -> 20 resources
+  Printer Access            -> 18 resources
+  Projector                 -> 10 resources
+  Whiteboard                -> 10 resources
+  Height-Adjustable Desk    -> 8 resources
+  Video Conferencing        -> 7 resources
+
+[5. AGGREGATION PIPELINE 2: Average Room Capacity per City & Floor]
+  Bengaluru Floor 1: rooms=2, avg_cap=27.5, max_cap=30
+  Bengaluru Floor 2: rooms=2, avg_cap=7.0, max_cap=8
+  Gurugram Floor 1: rooms=2, avg_cap=5.0, max_cap=6
+  Gurugram Floor 2: rooms=2, avg_cap=9.0, max_cap=10
+  Gurugram Floor 3: rooms=2, avg_cap=16.0, max_cap=20
