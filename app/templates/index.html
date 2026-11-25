@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Search Workspace Availability &amp; Book</h2>
+<p>Default date is set to <strong>2026-12-01</strong> (after the Nov 2026 sample dataset). Booking calls <code>sp_book_resource</code> (BR4–BR7, BR12–BR13).</p>
+
+<form method="get" action="{{ url_for('index') }}" style="display:flex; gap:10px; flex-wrap:wrap; align-items:end;">
+  <div>
+    <label>Date<br><input type="date" name="date" value="{{ booking_date }}" required></label>
+  </div>
+  <div>
+    <label>Start<br><input type="time" name="start_time" value="{{ start_time }}" required></label>
+  </div>
+  <div>
+    <label>End<br><input type="time" name="end_time" value="{{ end_time }}" required></label>
+  </div>
+  <div>
+    <label>Type<br>
+      <select name="resource_type">
+        <option value="All" {% if res_type == 'All' %}selected{% endif %}>All</option>
+        <option value="Desk" {% if res_type == 'Desk' %}selected{% endif %}>Desk</option>
+        <option value="Room" {% if res_type == 'Room' %}selected{% endif %}>Room</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <label>Min Capacity<br><input type="number" name="min_capacity" value="{{ min_cap }}" min="1" max="100" style="width:80px;"></label>
+  </div>
+  <div><button type="submit">Search</button></div>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th><th>Type</th><th>Details</th><th>Location</th><th>Status</th><th>Book</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in resources %}
+    <tr>
+      <td><strong>{{ r.resource_code }}</strong></td>
+      <td>{{ r.resource_type }}</td>
+      <td>
+        {% if r.resource_type == 'Desk' %}
+          {{ r.desk_type }} Desk
+        {% else %}
+          {{ r.room_name }} (Cap: {{ r.capacity }})
+        {% endif %}
+      </td>
+      <td>{{ r.city }}, Floor {{ r.floor_no }}, {{ r.zone_name }}</td>
+      <td>
+        {% if r.is_free %}
+          <span class="badge-free">Available</span>
+        {% else %}
+          <span class="badge-busy">Booked</span>
+        {% endif %}
+      </td>
+      <td>
+        <form method="post" action="{{ url_for('book') }}" style="display:flex; gap:6px; align-items:center;">
+          <input type="hidden" name="resource_id" value="{{ r.resource_id }}">
+          <input type="hidden" name="booking_date" value="{{ booking_date }}">
+          <input type="hidden" name="start_time" value="{{ start_time }}">
+          <input type="hidden" name="end_time" value="{{ end_time }}">
+          <input type="number" name="attendees" value="1" min="1" max="100" style="width:55px;" title="Attendees">
+          <button type="submit">Book</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
