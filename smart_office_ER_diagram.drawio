@@ -1,0 +1,250 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ER Diagram" id="er1">
+    <mxGraphModel dx="1805" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1750" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e_DEPARTMENT" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="DEPARTMENT" vertex="1">
+          <mxGeometry height="74" width="210" x="40" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="e_DEPARTMENT_r0" parent="e_DEPARTMENT" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;dept_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_DEPARTMENT_r1" parent="e_DEPARTMENT" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; dept_name (unique)" vertex="1">
+          <mxGeometry height="24" width="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EMPLOYEE" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="EMPLOYEE" vertex="1">
+          <mxGeometry height="170" width="210" x="40" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EMPLOYEE_r0" parent="e_EMPLOYEE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;emp_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EMPLOYEE_r1" parent="e_EMPLOYEE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; name" vertex="1">
+          <mxGeometry height="24" width="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EMPLOYEE_r2" parent="e_EMPLOYEE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; email (unique)" vertex="1">
+          <mxGeometry height="24" width="210" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EMPLOYEE_r3" parent="e_EMPLOYEE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; phone" vertex="1">
+          <mxGeometry height="24" width="210" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EMPLOYEE_r4" parent="e_EMPLOYEE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; role" vertex="1">
+          <mxGeometry height="24" width="210" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EMPLOYEE_r5" parent="e_EMPLOYEE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; dept_id" vertex="1">
+          <mxGeometry height="24" width="210" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="e_OFFICE" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="OFFICE" vertex="1">
+          <mxGeometry height="122" width="210" x="875" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e_OFFICE_r0" parent="e_OFFICE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;office_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_OFFICE_r1" parent="e_OFFICE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; office_name" vertex="1">
+          <mxGeometry height="24" width="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_OFFICE_r2" parent="e_OFFICE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; city" vertex="1">
+          <mxGeometry height="24" width="210" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_OFFICE_r3" parent="e_OFFICE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; address" vertex="1">
+          <mxGeometry height="24" width="210" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="e_FLOOR" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="FLOOR" vertex="1">
+          <mxGeometry height="98" width="210" x="875" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e_FLOOR_r0" parent="e_FLOOR" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;floor_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_FLOOR_r1" parent="e_FLOOR" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; floor_no" vertex="1">
+          <mxGeometry height="24" width="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_FLOOR_r2" parent="e_FLOOR" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; office_id" vertex="1">
+          <mxGeometry height="24" width="210" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ZONE" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="ZONE" vertex="1">
+          <mxGeometry height="98" width="210" x="875" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ZONE_r0" parent="e_ZONE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;zone_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ZONE_r1" parent="e_ZONE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; zone_name" vertex="1">
+          <mxGeometry height="24" width="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ZONE_r2" parent="e_ZONE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; floor_id" vertex="1">
+          <mxGeometry height="24" width="210" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="RESOURCE" vertex="1">
+          <mxGeometry height="146" width="210" x="875" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_r0" parent="e_RESOURCE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;resource_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_r1" parent="e_RESOURCE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; resource_code (unique)" vertex="1">
+          <mxGeometry height="24" width="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_r2" parent="e_RESOURCE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; resource_type" vertex="1">
+          <mxGeometry height="24" width="210" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_r3" parent="e_RESOURCE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; status" vertex="1">
+          <mxGeometry height="24" width="210" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_r4" parent="e_RESOURCE" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; zone_id" vertex="1">
+          <mxGeometry height="24" width="210" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="e_DESK" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="DESK" vertex="1">
+          <mxGeometry height="98" width="200" x="780" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="e_DESK_r0" parent="e_DESK" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;PK, FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; resource_id" vertex="1">
+          <mxGeometry height="24" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_DESK_r1" parent="e_DESK" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; desk_number" vertex="1">
+          <mxGeometry height="24" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_DESK_r2" parent="e_DESK" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; desk_type" vertex="1">
+          <mxGeometry height="24" width="200" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ROOM" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="ROOM" vertex="1">
+          <mxGeometry height="98" width="200" x="1000" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ROOM_r0" parent="e_ROOM" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;PK, FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; resource_id" vertex="1">
+          <mxGeometry height="24" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ROOM_r1" parent="e_ROOM" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; room_name" vertex="1">
+          <mxGeometry height="24" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ROOM_r2" parent="e_ROOM" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; capacity" vertex="1">
+          <mxGeometry height="24" width="200" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_AMENITY" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="RESOURCE_AMENITY" vertex="1">
+          <mxGeometry height="74" width="210" x="1160" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_AMENITY_r0" parent="e_RESOURCE_AMENITY" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;PK, FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; resource_id" vertex="1">
+          <mxGeometry height="24" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_RESOURCE_AMENITY_r1" parent="e_RESOURCE_AMENITY" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;PK, FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; amenity_id" vertex="1">
+          <mxGeometry height="24" width="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_AMENITY" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="AMENITY" vertex="1">
+          <mxGeometry height="74" width="200" x="1440" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="e_AMENITY_r0" parent="e_AMENITY" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;amenity_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_AMENITY_r1" parent="e_AMENITY" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; amenity_name (unique)" vertex="1">
+          <mxGeometry height="24" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="BOOKING" vertex="1">
+          <mxGeometry height="242" width="240" x="360" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r0" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;booking_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r1" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; emp_id" vertex="1">
+          <mxGeometry height="24" width="240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r2" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; resource_id" vertex="1">
+          <mxGeometry height="24" width="240" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r3" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; booking_date" vertex="1">
+          <mxGeometry height="24" width="240" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r4" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; start_time" vertex="1">
+          <mxGeometry height="24" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r5" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; end_time" vertex="1">
+          <mxGeometry height="24" width="240" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r6" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; attendees" vertex="1">
+          <mxGeometry height="24" width="240" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r7" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; status" vertex="1">
+          <mxGeometry height="24" width="240" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BOOKING_r8" parent="e_BOOKING" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; created_at" vertex="1">
+          <mxGeometry height="24" width="240" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="e_CANCELLATION" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="CANCELLATION" vertex="1">
+          <mxGeometry height="122" width="200" x="260" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="e_CANCELLATION_r0" parent="e_CANCELLATION" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;cancel_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_CANCELLATION_r1" parent="e_CANCELLATION" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; booking_id (unique)" vertex="1">
+          <mxGeometry height="24" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_CANCELLATION_r2" parent="e_CANCELLATION" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; cancelled_at" vertex="1">
+          <mxGeometry height="24" width="200" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_CANCELLATION_r3" parent="e_CANCELLATION" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; reason" vertex="1">
+          <mxGeometry height="24" width="200" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ACCESS_LOG" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="ACCESS_LOG" vertex="1">
+          <mxGeometry height="122" width="200" x="520" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ACCESS_LOG_r0" parent="e_ACCESS_LOG" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp; &lt;u&gt;log_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ACCESS_LOG_r1" parent="e_ACCESS_LOG" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;i&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/i&gt;&amp;nbsp; booking_id (unique)" vertex="1">
+          <mxGeometry height="24" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ACCESS_LOG_r2" parent="e_ACCESS_LOG" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; check_in_time" vertex="1">
+          <mxGeometry height="24" width="200" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ACCESS_LOG_r3" parent="e_ACCESS_LOG" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;html=1;fontSize=12;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; check_out_time" vertex="1">
+          <mxGeometry height="24" width="200" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="e_DEPARTMENT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_EMPLOYEE" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="e_EMPLOYEE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_BOOKING" value="makes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="e_RESOURCE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_BOOKING" value="is booked in">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="e_OFFICE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_FLOOR" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="e_FLOOR" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_ZONE" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="e_ZONE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_RESOURCE" value="contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="e_BOOKING" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToOne;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_CANCELLATION" value="may have">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="1" source="e_BOOKING" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToOne;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_ACCESS_LOG" value="tracked by">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="1" source="e_RESOURCE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_RESOURCE_AMENITY" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="1" source="e_AMENITY" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_RESOURCE_AMENITY" value="offered in">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="isa" parent="1" style="ellipse;html=1;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FFFFFF);" value="d" vertex="1">
+          <mxGeometry height="40" width="40" x="960" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" edge="1" parent="1" source="e_RESOURCE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="isa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" edge="1" parent="1" source="isa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_DESK">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" edge="1" parent="1" source="isa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFFFF);" target="e_ROOM">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;strokeColor=light-dark(#000000,#FFFFFF);" value="Specialization: disjoint, total&lt;br&gt;(every resource is either a Desk or a Room)" vertex="1">
+          <mxGeometry height="40" width="260" x="1010" y="672" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=16;fontStyle=1;strokeColor=light-dark(#000000,#FFFFFF);fillColor=light-dark(transparent,#000000);" value="ER / EER Diagram: Smart Office Seat &amp;amp; Co-working Space Allocation System" vertex="1">
+          <mxGeometry height="30" width="700" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;strokeColor=light-dark(#000000,#FFFFFF);fillColor=light-dark(transparent,#000000);" value="&lt;b&gt;Notation (crow&#39;s foot):&lt;/b&gt; | = exactly one &amp;nbsp; O&amp;lt; = zero or many &amp;nbsp; O| = zero or one&lt;br&gt;&lt;b&gt;Colours:&lt;/b&gt; blue = master data, green = resource &amp;amp; subtypes, yellow = M:N junction, orange = booking activity" vertex="1">
+          <mxGeometry height="50" width="700" x="40" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
