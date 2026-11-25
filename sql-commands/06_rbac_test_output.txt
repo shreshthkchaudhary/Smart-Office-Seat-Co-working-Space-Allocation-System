@@ -1,0 +1,78 @@
+========================================================================
+SMART OFFICE RBAC & LEAST-PRIVILEGE VERIFICATION OUTPUT
+========================================================================
+
+--- ROLE 1: employee (user: emp_5) ---
+  SHOW GRANTS:
+    GRANT USAGE ON *.* TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`amenity` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`desk` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`floor` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`office` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`resource_amenity` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`resource` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`room` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_current_availability` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_employee_directory` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_my_bookings` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_resource_utilization` TO `emp_5`@`localhost`
+    GRANT SELECT ON `smart_office`.`zone` TO `emp_5`@`localhost`
+    GRANT EXECUTE ON PROCEDURE `smart_office`.`sp_book_resource` TO `emp_5`@`localhost`
+    GRANT EXECUTE ON PROCEDURE `smart_office`.`sp_cancel_booking` TO `emp_5`@`localhost`
+    GRANT EXECUTE ON PROCEDURE `smart_office`.`sp_check_in` TO `emp_5`@`localhost`
+    GRANT EXECUTE ON FUNCTION `smart_office`.`fn_is_available` TO `emp_5`@`localhost`
+    GRANT EXECUTE ON FUNCTION `smart_office`.`fn_utilization_pct` TO `emp_5`@`localhost`
+    GRANT `employee`@`%` TO `emp_5`@`localhost`
+  [ALLOWED: SELECT from BR14 view v_my_bookings]
+  RESULT: ALLOWED -> v_my_bookings returned 3 row(s), all for emp_id=5
+  [DENIED : Direct INSERT INTO booking (must use sp_book_resource)]
+  RESULT: DENIED  -> MySQL Error 1142 (42000): INSERT command denied to user 'emp_5'@'localhost' for table 'booking'
+
+--- ROLE 2: facility_manager (user: fm_user) ---
+  SHOW GRANTS:
+    GRANT USAGE ON *.* TO `fm_user`@`localhost`
+    GRANT SELECT, INSERT, UPDATE, DELETE ON `smart_office`.`amenity` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`department` TO `fm_user`@`localhost`
+    GRANT SELECT, INSERT, UPDATE, DELETE ON `smart_office`.`desk` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`employee` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`floor` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`office` TO `fm_user`@`localhost`
+    GRANT SELECT, INSERT, UPDATE, DELETE ON `smart_office`.`resource_amenity` TO `fm_user`@`localhost`
+    GRANT SELECT, INSERT, UPDATE, DELETE ON `smart_office`.`resource` TO `fm_user`@`localhost`
+    GRANT SELECT, INSERT, UPDATE, DELETE ON `smart_office`.`room` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_booking_details` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_current_availability` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_resource_utilization` TO `fm_user`@`localhost`
+    GRANT SELECT ON `smart_office`.`zone` TO `fm_user`@`localhost`
+    GRANT `facility_manager`@`%` TO `fm_user`@`localhost`
+  [ALLOWED: SELECT utilization report v_resource_utilization]
+  RESULT: ALLOWED -> Top utilization rows: [('D-115', Decimal('27.0')), ('D-127', Decimal('21.0')), ('D-113', Decimal('19.0'))]
+  [DENIED : DELETE FROM booking]
+  RESULT: DENIED  -> MySQL Error 1142 (42000): DELETE command denied to user 'fm_user'@'localhost' for table 'booking'
+
+--- ROLE 3: security (user: sec_auditor) ---
+  SHOW GRANTS:
+    GRANT USAGE ON *.* TO `sec_auditor`@`localhost`
+    GRANT SELECT ON `smart_office`.`access_log` TO `sec_auditor`@`localhost`
+    GRANT SELECT ON `smart_office`.`v_booking_details` TO `sec_auditor`@`localhost`
+    GRANT `security`@`%` TO `sec_auditor`@`localhost`
+  [ALLOWED: SELECT from access_log]
+  RESULT: ALLOWED -> access_log sample: 3 row(s)
+  [DENIED : SELECT from employee (personal data)]
+  RESULT: DENIED  -> MySQL Error 1142 (42000): SELECT command denied to user 'sec_auditor'@'localhost' for table 'employee'
+
+--- ROLE 4: admin (user: office_admin) ---
+  SHOW GRANTS:
+    GRANT USAGE ON *.* TO `office_admin`@`localhost`
+    GRANT ALL PRIVILEGES ON `smart_office`.* TO `office_admin`@`localhost`
+    GRANT `admin`@`%` TO `office_admin`@`localhost`
+  [ALLOWED: SELECT COUNT(*) FROM smart_office.booking]
+  RESULT: ALLOWED -> Full access verified: booking has 270 rows
+  [DENIED : SELECT FROM mysql.user (scoped to smart_office.* only)]
+  RESULT: DENIED  -> MySQL Error 1142 (42000): SELECT command denied to user 'office_admin'@'localhost' for table 'user'
+
+--- REVOKE DEMO (facility_manager loses v_resource_utilization) ---
+  Admin executed: REVOKE SELECT ON smart_office.v_resource_utilization FROM 'facility_manager'
+  [AFTER REVOKE: fm_user queries v_resource_utilization]
+  RESULT: DENIED  -> MySQL Error 1142 (42000): SELECT command denied to user 'fm_user'@'localhost' for table 'v_resource_utilization'
+  Admin restored: GRANT SELECT ON smart_office.v_resource_utilization TO 'facility_manager'
