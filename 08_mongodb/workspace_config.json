@@ -1,0 +1,1646 @@
+[
+  {
+    "resource_id": 1,
+    "resource_code": "D-101",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "101",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-101",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 2,
+    "resource_code": "D-102",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "102",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-102",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 3,
+    "resource_code": "D-103",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "103",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-103",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 4,
+    "resource_code": "D-104",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "104",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-104",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 5,
+    "resource_code": "D-105",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "105",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Interior",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-105",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 6,
+    "resource_code": "D-106",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "106",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-106",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 7,
+    "resource_code": "D-107",
+    "resource_type": "Desk",
+    "status": "Maintenance",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "107",
+    "layout": {
+      "desk_type": "Quiet",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-107",
+      "noise_zone_db": 42
+    }
+  },
+  {
+    "resource_id": 8,
+    "resource_code": "D-108",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "108",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-108",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 9,
+    "resource_code": "D-109",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "109",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-109",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 10,
+    "resource_code": "D-110",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets"
+    ],
+    "desk_number": "110",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Window",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-110",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 11,
+    "resource_code": "D-111",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "111",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-111",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 12,
+    "resource_code": "D-112",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "112",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-112",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 13,
+    "resource_code": "D-113",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "113",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-113",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 14,
+    "resource_code": "D-114",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "114",
+    "layout": {
+      "desk_type": "Quiet",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-114",
+      "noise_zone_db": 42
+    }
+  },
+  {
+    "resource_id": 15,
+    "resource_code": "D-115",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "115",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Interior",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets",
+      "Printer Access",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-115",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 16,
+    "resource_code": "D-116",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "116",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-116",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 17,
+    "resource_code": "D-117",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "117",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-117",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 18,
+    "resource_code": "D-118",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "118",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-118",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 19,
+    "resource_code": "D-119",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "119",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-119",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 20,
+    "resource_code": "D-120",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets"
+    ],
+    "desk_number": "120",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Window",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-120",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 21,
+    "resource_code": "D-121",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "121",
+    "layout": {
+      "desk_type": "Quiet",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-121",
+      "noise_zone_db": 42
+    }
+  },
+  {
+    "resource_id": 22,
+    "resource_code": "D-122",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "122",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-122",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 23,
+    "resource_code": "D-123",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "123",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-123",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 24,
+    "resource_code": "D-124",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "124",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-124",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 25,
+    "resource_code": "D-125",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "125",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Interior",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-125",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 26,
+    "resource_code": "D-126",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "126",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-126",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 27,
+    "resource_code": "D-127",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "127",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-127",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 28,
+    "resource_code": "D-128",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "128",
+    "layout": {
+      "desk_type": "Quiet",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-128",
+      "noise_zone_db": 42
+    }
+  },
+  {
+    "resource_id": 29,
+    "resource_code": "D-129",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "129",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-129",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 30,
+    "resource_code": "D-130",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "130",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Window",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets",
+      "Printer Access",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-130",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 31,
+    "resource_code": "D-131",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "131",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-131",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 32,
+    "resource_code": "D-132",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "132",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-132",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 33,
+    "resource_code": "D-133",
+    "resource_type": "Desk",
+    "status": "Inactive",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "133",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-133",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 34,
+    "resource_code": "D-134",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "134",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-134",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 35,
+    "resource_code": "D-135",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "135",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Interior",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Height-Adjustable Desk",
+      "Monitor",
+      "Power Outlets",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-135",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 36,
+    "resource_code": "D-136",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "136",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-136",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 37,
+    "resource_code": "D-137",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "desk_number": "137",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-137",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 38,
+    "resource_code": "D-138",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "desk_number": "138",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Window",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Docking Station",
+      "Power Outlets"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-138",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 39,
+    "resource_code": "D-139",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "desk_number": "139",
+    "layout": {
+      "desk_type": "Standard",
+      "orientation": "Interior",
+      "power_outlets": 1
+    },
+    "equipment": [
+      "Monitor",
+      "Power Outlets",
+      "Printer Access"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-139",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 40,
+    "resource_code": "D-140",
+    "resource_type": "Desk",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets"
+    ],
+    "desk_number": "140",
+    "layout": {
+      "desk_type": "Standing",
+      "orientation": "Window",
+      "power_outlets": 2
+    },
+    "equipment": [
+      "Docking Station",
+      "Height-Adjustable Desk",
+      "Power Outlets",
+      "Adjustable Sit-Stand Frame"
+    ],
+    "sensor_info": {
+      "occupancy_sensor": "PIR-D-140",
+      "noise_zone_db": 55
+    }
+  },
+  {
+    "resource_id": 41,
+    "resource_code": "R-201",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Whiteboard"
+    ],
+    "room_name": "Alpha",
+    "capacity": 4,
+    "layout": {
+      "seating_style": "Huddle",
+      "reconfigurable": false
+    },
+    "equipment": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": false
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.1.141"
+    }
+  },
+  {
+    "resource_id": 42,
+    "resource_code": "R-202",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Projector",
+      "Whiteboard"
+    ],
+    "room_name": "Beta",
+    "capacity": 6,
+    "layout": {
+      "seating_style": "Huddle",
+      "reconfigurable": false
+    },
+    "equipment": [
+      "Power Outlets",
+      "Projector",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": false
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.1.142"
+    }
+  },
+  {
+    "resource_id": 43,
+    "resource_code": "R-203",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "room_name": "Gamma",
+    "capacity": 8,
+    "layout": {
+      "seating_style": "Huddle",
+      "reconfigurable": false
+    },
+    "equipment": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": false
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.2.143"
+    }
+  },
+  {
+    "resource_id": 44,
+    "resource_code": "R-204",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "room_name": "Delta",
+    "capacity": 10,
+    "layout": {
+      "seating_style": "Huddle",
+      "reconfigurable": false
+    },
+    "equipment": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": false
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.2.144"
+    }
+  },
+  {
+    "resource_id": 45,
+    "resource_code": "R-205",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "room_name": "Sigma",
+    "capacity": 12,
+    "layout": {
+      "seating_style": "Boardroom",
+      "reconfigurable": false
+    },
+    "equipment": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": false
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.3.145"
+    }
+  },
+  {
+    "resource_id": 46,
+    "resource_code": "R-206",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks HQ",
+      "city": "Gurugram",
+      "floor_no": 3,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "room_name": "Omega",
+    "capacity": 20,
+    "layout": {
+      "seating_style": "Boardroom",
+      "reconfigurable": true
+    },
+    "equipment": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": true
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.3.146"
+    }
+  },
+  {
+    "resource_id": 47,
+    "resource_code": "R-207",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "room_name": "Orion",
+    "capacity": 25,
+    "layout": {
+      "seating_style": "Boardroom",
+      "reconfigurable": true
+    },
+    "equipment": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": true
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.1.147"
+    }
+  },
+  {
+    "resource_id": 48,
+    "resource_code": "R-208",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 1,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "room_name": "Nova",
+    "capacity": 30,
+    "layout": {
+      "seating_style": "Boardroom",
+      "reconfigurable": true
+    },
+    "equipment": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": true
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.1.148"
+    }
+  },
+  {
+    "resource_id": 49,
+    "resource_code": "R-209",
+    "resource_type": "Room",
+    "status": "Maintenance",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone A"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Whiteboard"
+    ],
+    "room_name": "Apollo",
+    "capacity": 6,
+    "layout": {
+      "seating_style": "Huddle",
+      "reconfigurable": false
+    },
+    "equipment": [
+      "Power Outlets",
+      "Printer Access",
+      "Projector",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": false
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.2.149"
+    }
+  },
+  {
+    "resource_id": 50,
+    "resource_code": "R-210",
+    "resource_type": "Room",
+    "status": "Active",
+    "location": {
+      "office": "NexaWorks Tech Park",
+      "city": "Bengaluru",
+      "floor_no": 2,
+      "zone": "Zone B"
+    },
+    "amenities": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "room_name": "Zenith",
+    "capacity": 8,
+    "layout": {
+      "seating_style": "Huddle",
+      "reconfigurable": false
+    },
+    "equipment": [
+      "Power Outlets",
+      "Projector",
+      "Video Conferencing",
+      "Whiteboard"
+    ],
+    "accessibility": {
+      "wheelchair_accessible": true,
+      "hearing_loop": false
+    },
+    "sensor_info": {
+      "co2_ppm_threshold": 1000,
+      "smart_thermostat": true,
+      "av_controller_ip": "10.20.2.150"
+    }
+  }
+]
