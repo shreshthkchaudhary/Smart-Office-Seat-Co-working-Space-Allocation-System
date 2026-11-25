@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Workspace Utilization Report (<code>v_resource_utilization</code>)</h2>
+<p>Utilization % = Booked Hours (Confirmed + Completed) / 200 Available Hours.</p>
+
+<table>
+  <thead>
+    <tr><th>Resource Code</th><th>Type</th><th>Booked Hours</th><th>Utilization %</th></tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td><strong>{{ row.resource_code }}</strong></td>
+      <td>{{ row.resource_type }}</td>
+      <td>{{ row.booked_hours }}</td>
+      <td>{{ row.util_pct }}%</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
