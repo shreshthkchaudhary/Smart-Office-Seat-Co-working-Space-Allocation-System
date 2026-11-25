@@ -1,0 +1,23 @@
+ID,Type,Description,Input,Expected,Actual,Status
+TC01,Positive,Book active desk via sp_book_resource,"emp=5, desk=1, 2026-12-01 10:00-12:00",SUCCESS: booking confirmed,SUCCESS: booking confirmed,PASS
+TC02,Positive,Book adjacent slot 12:00-14:00 (BR5 boundary),"emp=6, desk=1, 2026-12-01 12:00-14:00",SUCCESS: booking confirmed,SUCCESS: booking confirmed,PASS
+TC03,Positive,Book active room at exact capacity (BR6),"emp=5, room=41, attendees=4",SUCCESS: booking confirmed,SUCCESS: booking confirmed,PASS
+TC04,Positive,Check in 5 mins before start (BR10),"booking_id=276, time=2026-12-01 09:55:00",SUCCESS: checked in,SUCCESS: checked in,PASS
+TC05,Positive,Owner cancels booking + audit trigger (BR9),"booking_id=277, emp=6",SUCCESS: booking cancelled + audit=1,SUCCESS: booking cancelled (audit=1),PASS
+TC06,Negative (BR5),Reject overlapping booking on same desk,"emp=7, desk=1, 2026-12-01 11:00-13:00",REJECTED: time slot overlaps,REJECTED: time slot overlaps an existing booking,PASS
+TC07,Negative (BR6),Reject room booking exceeding capacity,"room=41, attendees=9 > 4",REJECTED: BR6 attendees exceed capacity,REJECTED: BR6: attendees exceed room capacity,PASS
+TC08,Negative (BR7),Reject booking on Maintenance/Inactive resource,resource_id=7,REJECTED: BR7 maintenance/inactive,REJECTED: BR7: resource is under maintenance or inactive,PASS
+TC09,Negative (BR12),Reject room booking > 4 hours,"room=41, 13:00-18:00 (5h)",REJECTED: BR12 max 4 hours,REJECTED: BR12: a room can be booked for at most 4 hours,PASS
+TC10,Negative (BR12),Reject desk booking > 9 hours,"desk=1, 08:00-18:00 (10h)",REJECTED: BR12 max 9 hours,REJECTED: BR12: a desk can be booked for at most 9 hours,PASS
+TC11,Negative (BR10),Reject check-in 60 mins before start,"booking_id=278, time=09:00 (start=10:00)",REJECTED: check-in 15 min window,REJECTED: check-in is allowed only 15 minutes before to 15 minutes after the start time,PASS
+TC12,Negative (BR14),Reject cancel by non-owner employee,"booking_id=278 (owner=5), caller=6",REJECTED: only cancel your own bookings,REJECTED: you can only cancel your own bookings,PASS
+TC13,Negative (BR9),Reject cancelling an already-cancelled booking,booking_id=277 (already Cancelled),REJECTED: BR9 only Confirmed,REJECTED: BR9: only Confirmed bookings can be cancelled,PASS
+TC14,Integrity (PK),Reject duplicate Primary Key on department,dept_id=1,MySQL Error 1062 Duplicate,Error 1062: Duplicate entry '1' for key 'department.PRIMARY',PASS
+TC15,Integrity (FK),Reject nonexistent emp_id Foreign Key,emp_id=999999,MySQL Error 1452 FK,Error 1452: Cannot add or update a child row: a foreign key constraint fails ,PASS
+TC16,Integrity (UNIQUE),Reject duplicate employee email,email=aarav.sharma@nexaworks.com,MySQL Error 1062 Duplicate,Error 1062: Duplicate entry 'aarav.sharma@nexaworks.com' for key 'employee.email',PASS
+TC17,Integrity (CHECK),Reject end_time <= start_time (chk_book_time),14:00:00 to 12:00:00,MySQL Error 3819 CHECK,Error 3819: Check constraint 'chk_book_time' is violated.,PASS
+TC18,Integrity (CHECK),Reject invalid employee role (chk_emp_role),role='Intern',MySQL Error 3819 CHECK,Error 3819: Check constraint 'chk_emp_role' is violated.,PASS
+TC19,Transaction (COMMIT),Committed row persists after COMMIT,INSERT __TestCommitDept__ + COMMIT,count=1,count=1,PASS
+TC20,Transaction (ROLLBACK),Rolled-back row is undone,INSERT __TestRollbackDept__ + ROLLBACK,count=0,count=0,PASS
+TC21,Transaction (SAVEPOINT),ROLLBACK TO sp1 keeps A and discards B,"Insert A, SAVEPOINT sp1, Insert B, ROLLBACK TO sp1, COMMIT",['__TestSpA__'],['__TestSpA__'],PASS
+TC22,Concurrency,2 simultaneous overlapping bookings on same desk,"Thread1(10-12) & Thread2(11-13) on desk=1, 2026-12-03","1 SUCCESS, 1 REJECTED","1 SUCCESS, 1 REJECTED (emp=6: SUCCESS: booking confirmed; emp=5: REJECTED: time slot overlaps an existing booking)",PASS
