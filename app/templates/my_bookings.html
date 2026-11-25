@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>My Bookings (BR14 View: <code>v_my_bookings</code>)</h2>
+<p>Enforced at the database level: connected MySQL user <code>{{ db_user }}</code> only sees rows belonging to their own <code>emp_id</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th><th>Resource</th><th>Location</th><th>Date</th><th>Time</th><th>Attendees</th><th>Status</th><th>Check-In (BR10)</th><th>Cancel (BR9)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for b in bookings %}
+    <tr>
+      <td>#{{ b.booking_id }}</td>
+      <td>{{ b.resource_code }} ({{ b.resource_type }})</td>
+      <td>{{ b.city }} F{{ b.floor_no }} - {{ b.zone_name }}</td>
+      <td>{{ b.booking_date }}</td>
+      <td>{{ b.start_time }} - {{ b.end_time }}</td>
+      <td>{{ b.attendees }}</td>
+      <td><strong>{{ b.status }}</strong></td>
+      <td>
+        {% if b.status == 'Confirmed' %}
+        <form method="post" action="{{ url_for('checkin', booking_id=b.booking_id) }}" style="display:flex; gap:4px;">
+          <input type="text" name="check_time" placeholder="YYYY-MM-DD HH:MM:SS" style="width:155px;" title="Optional demo timestamp (blank = NOW())">
+          <button type="submit">Check-In</button>
+        </form>
+        {% else %}-{% endif %}
+      </td>
+      <td>
+        {% if b.status == 'Confirmed' %}
+        <form method="post" action="{{ url_for('cancel', booking_id=b.booking_id) }}" style="display:flex; gap:4px;">
+          <input type="text" name="reason" placeholder="Reason" value="Schedule changed" style="width:120px;">
+          <button type="submit" class="danger">Cancel</button>
+        </form>
+        {% else %}-{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
