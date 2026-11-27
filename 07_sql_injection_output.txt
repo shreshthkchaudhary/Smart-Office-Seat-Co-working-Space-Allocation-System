@@ -32,8 +32,8 @@ AFTER (FIXED parameterized query):
 ------------------------------------------------------------------------
 DEMO 3: Stored Procedure (callproc) with Malicious Input
 ------------------------------------------------------------------------
-  Step 1 - sp_book_resource returned: booking_id=271, msg='SUCCESS: booking confirmed'
+  Step 1 - sp_book_resource returned: booking_id=300, msg='SUCCESS: booking confirmed'
   Step 2 - sp_cancel_booking called with p_reason="Plans changed'; DROP TABLE booking; -- "
            Returned: 'SUCCESS: booking cancelled'
-  Step 3 - Verified via v_my_bookings: (271, 'Cancelled') (booking table intact!)
-  Cleanup - Removed temporary test booking_id=271 (database unchanged).
+  Step 3 - Verified via v_my_bookings: (300, 'Cancelled') (booking table intact!)
+  Cleanup - Removed temporary test booking_id=300 (database unchanged).

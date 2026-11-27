@@ -46,7 +46,7 @@ SMART OFFICE RBAC & LEAST-PRIVILEGE VERIFICATION OUTPUT
     GRANT SELECT ON `smart_office`.`zone` TO `fm_user`@`localhost`
     GRANT `facility_manager`@`%` TO `fm_user`@`localhost`
   [ALLOWED: SELECT utilization report v_resource_utilization]
-  RESULT: ALLOWED -> Top utilization rows: [('D-115', Decimal('27.0')), ('D-127', Decimal('21.0')), ('D-113', Decimal('19.0'))]
+  RESULT: ALLOWED -> Top utilization rows: [('D-115', Decimal('27.0')), ('D-127', Decimal('21.0')), ('D-103', Decimal('19.0'))]
   [DENIED : DELETE FROM booking]
   RESULT: DENIED  -> MySQL Error 1142 (42000): DELETE command denied to user 'fm_user'@'localhost' for table 'booking'
 
@@ -67,7 +67,7 @@ SMART OFFICE RBAC & LEAST-PRIVILEGE VERIFICATION OUTPUT
     GRANT ALL PRIVILEGES ON `smart_office`.* TO `office_admin`@`localhost`
     GRANT `admin`@`%` TO `office_admin`@`localhost`
   [ALLOWED: SELECT COUNT(*) FROM smart_office.booking]
-  RESULT: ALLOWED -> Full access verified: booking has 270 rows
+  RESULT: ALLOWED -> Full access verified: booking has 277 rows
   [DENIED : SELECT FROM mysql.user (scoped to smart_office.* only)]
   RESULT: DENIED  -> MySQL Error 1142 (42000): SELECT command denied to user 'office_admin'@'localhost' for table 'user'
 
