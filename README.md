@@ -5,6 +5,9 @@
 **Team Members:** Shreshth Kumar Chaudhary (2501010080) • Shreyansh Kumar (2501010019) • Nitin (2501010014)  
 **Faculty Mentor:** Dr. Deepika Garg | **Submission Date:** 26 November 2026  
 
+🌐 **Live 24/7 Production URL:** [https://smart-office-system.onrender.com](https://smart-office-system.onrender.com)  
+🗄️ **Cloud Database:** Aiven Managed MySQL 8.4 (InnoDB, Triggers, Stored Procedures, ACID)  
+
 ---
 
 ## 📸 Visual Showcase & Execution Screenshots
