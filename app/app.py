@@ -21,13 +21,19 @@ app.secret_key = os.getenv("FLASK_SECRET_KEY", "smart-office-capstone-dev-key")
 
 
 def get_db():
-    """Open a MySQL connection using the low-privilege employee user."""
+    """Open a MySQL connection using environment variables (supports Railway & local)."""
+    host = os.getenv("MYSQLHOST") or os.getenv("MYSQL_HOST", "localhost")
+    port = int(os.getenv("MYSQLPORT") or os.getenv("MYSQL_PORT", "3306"))
+    user = os.getenv("MYSQL_EMP_USER") or os.getenv("MYSQLUSER") or os.getenv("MYSQL_USER", "emp_5")
+    password = os.getenv("MYSQL_EMP_PASSWORD") or os.getenv("MYSQLPASSWORD") or os.getenv("MYSQL_PASSWORD")
+    database = os.getenv("MYSQLDATABASE") or os.getenv("MYSQL_DATABASE", "smart_office")
+
     return mysql.connector.connect(
-        host=os.getenv("MYSQL_HOST", "localhost"),
-        port=int(os.getenv("MYSQL_PORT", "3306")),
-        user=os.getenv("MYSQL_EMP_USER", "emp_5"),
-        password=os.getenv("MYSQL_EMP_PASSWORD"),
-        database=os.getenv("MYSQL_DATABASE", "smart_office"),
+        host=host,
+        port=port,
+        user=user,
+        password=password,
+        database=database,
     )
 
 
@@ -216,4 +222,5 @@ def utilization():
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    port = int(os.getenv("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
