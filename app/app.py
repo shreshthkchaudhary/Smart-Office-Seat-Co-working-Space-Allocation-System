@@ -21,11 +21,11 @@ app.secret_key = os.getenv("FLASK_SECRET_KEY", "smart-office-capstone-dev-key")
 
 
 def get_db():
-    """Open a MySQL connection using environment variables (supports Railway & local)."""
+    """Open a MySQL connection using environment variables (supports Cloud & local)."""
     host = os.getenv("MYSQLHOST") or os.getenv("MYSQL_HOST", "localhost")
     port = int(os.getenv("MYSQLPORT") or os.getenv("MYSQL_PORT", "3306"))
-    user = os.getenv("MYSQL_EMP_USER") or os.getenv("MYSQLUSER") or os.getenv("MYSQL_USER", "emp_5")
-    password = os.getenv("MYSQL_EMP_PASSWORD") or os.getenv("MYSQLPASSWORD") or os.getenv("MYSQL_PASSWORD")
+    user = os.getenv("MYSQL_USER") or os.getenv("MYSQLUSER") or os.getenv("MYSQL_EMP_USER", "emp_5")
+    password = os.getenv("MYSQL_PASSWORD") or os.getenv("MYSQLPASSWORD") or os.getenv("MYSQL_EMP_PASSWORD")
     database = os.getenv("MYSQLDATABASE") or os.getenv("MYSQL_DATABASE", "smart_office")
 
     return mysql.connector.connect(
@@ -34,6 +34,7 @@ def get_db():
         user=user,
         password=password,
         database=database,
+        ssl_disabled=False,
     )
 
 
@@ -157,15 +158,17 @@ def book():
 
 @app.route("/my-bookings", methods=["GET"])
 def my_bookings():
+    emp_id = session.get("emp_id", 5)
     conn = get_db()
     cur = conn.cursor(dictionary=True)
-    # BR14: v_my_bookings automatically filters by connected MySQL USER() (emp_5 -> emp_id=5)
+    # BR14: shows only the active logged-in employee's bookings
     cur.execute("""
         SELECT booking_id, emp_id, employee_name, resource_code, resource_type,
                zone_name, floor_no, city, booking_date, start_time, end_time, attendees, status
         FROM v_my_bookings
+        WHERE emp_id = %s
         ORDER BY booking_date DESC, start_time DESC
-    """)
+    """, (emp_id,))
     bookings = cur.fetchall()
     cur.close()
     conn.close()
